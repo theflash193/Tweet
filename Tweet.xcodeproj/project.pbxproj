@@ -15,6 +15,8 @@
 		0013EF911EE6F75400BE3BBA /* TweetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0013EF901EE6F75400BE3BBA /* TweetTests.swift */; };
 		0013EF9C1EE6F75400BE3BBA /* TweetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0013EF9B1EE6F75400BE3BBA /* TweetUITests.swift */; };
 		0013EFAA1EE6F77100BE3BBA /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0013EFA91EE6F77100BE3BBA /* Tweet.swift */; };
+		00373A681EEE8BE700E3CAE6 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00373A671EEE8BE700E3CAE6 /* APIController.swift */; };
+		00A1A73E1EE803B500BDBAE2 /* APITwitterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1A73D1EE803B500BDBAE2 /* APITwitterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0013EF9B1EE6F75400BE3BBA /* TweetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetUITests.swift; sourceTree = "<group>"; };
 		0013EF9D1EE6F75400BE3BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0013EFA91EE6F77100BE3BBA /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		00373A671EEE8BE700E3CAE6 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		00A1A73D1EE803B500BDBAE2 /* APITwitterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITwitterDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		0013EF7A1EE6F75300BE3BBA /* Tweet */ = {
 			isa = PBXGroup;
 			children = (
+				00373A671EEE8BE700E3CAE6 /* APIController.swift */,
+				00A1A73D1EE803B500BDBAE2 /* APITwitterDelegate.swift */,
 				0013EFA91EE6F77100BE3BBA /* Tweet.swift */,
 				0013EF7B1EE6F75400BE3BBA /* AppDelegate.swift */,
 				0013EF7D1EE6F75400BE3BBA /* ViewController.swift */,
@@ -265,6 +271,8 @@
 				0013EFAA1EE6F77100BE3BBA /* Tweet.swift in Sources */,
 				0013EF7E1EE6F75400BE3BBA /* ViewController.swift in Sources */,
 				0013EF7C1EE6F75400BE3BBA /* AppDelegate.swift in Sources */,
+				00A1A73E1EE803B500BDBAE2 /* APITwitterDelegate.swift in Sources */,
+				00373A681EEE8BE700E3CAE6 /* APIController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +517,7 @@
 				0013EFA21EE6F75400BE3BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0013EFA31EE6F75400BE3BBA /* Build configuration list for PBXNativeTarget "TweetTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +526,7 @@
 				0013EFA51EE6F75400BE3BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0013EFA61EE6F75400BE3BBA /* Build configuration list for PBXNativeTarget "TweetUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +535,7 @@
 				0013EFA81EE6F75400BE3BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
