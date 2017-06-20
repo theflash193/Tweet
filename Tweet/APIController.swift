@@ -27,7 +27,7 @@ class APIController {
             
             let task = URLSession.shared.dataTask(with : request as URLRequest) { (data, response, error) in
                 if let err = error {
-                    print(err)
+                    //print(err)
                     self.delegate?.GestionErreur(erreur: err as NSError)
                 } else if let d = data {
                     do {
@@ -35,7 +35,7 @@ class APIController {
                             if let statuses =  dic["statuses"] as? [NSDictionary] {
                                  var post: [Tweet] = []
                                 for posts in statuses {
-                                    if let user = posts["users"] as? NSDictionary {
+                                    if let user = posts["user"] as? NSDictionary {
                                         if let name = user["name"] as? String {
                                             if let text = posts["text"] as? String {
                                                 post.append(Tweet(name: name, text: text))
@@ -43,12 +43,15 @@ class APIController {
                                         }
                                     }
                                 }
+                                    self.delegate?.GestionTweet(tweet: post)
                             }
-                            print(dic)
+                            
+
                         }
                     } catch (let err) {
                         print(err)
-                        self.delegate?.GestionErreur(erreur: err as NSError)
+                            self.delegate?.GestionErreur(erreur: err as NSError)
+                        
                     }
                 }
             }

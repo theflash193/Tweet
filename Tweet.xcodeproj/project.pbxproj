@@ -17,6 +17,7 @@
 		0013EFAA1EE6F77100BE3BBA /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0013EFA91EE6F77100BE3BBA /* Tweet.swift */; };
 		00373A681EEE8BE700E3CAE6 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00373A671EEE8BE700E3CAE6 /* APIController.swift */; };
 		00A1A73E1EE803B500BDBAE2 /* APITwitterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1A73D1EE803B500BDBAE2 /* APITwitterDelegate.swift */; };
+		00E109401EF95B54009296F0 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E1093F1EF95B54009296F0 /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0013EFA91EE6F77100BE3BBA /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		00373A671EEE8BE700E3CAE6 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		00A1A73D1EE803B500BDBAE2 /* APITwitterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITwitterDelegate.swift; sourceTree = "<group>"; };
+		00E1093F1EF95B54009296F0 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				00373A671EEE8BE700E3CAE6 /* APIController.swift */,
 				00A1A73D1EE803B500BDBAE2 /* APITwitterDelegate.swift */,
 				0013EFA91EE6F77100BE3BBA /* Tweet.swift */,
+				00E1093F1EF95B54009296F0 /* Token.swift */,
 				0013EF7B1EE6F75400BE3BBA /* AppDelegate.swift */,
 				0013EF7D1EE6F75400BE3BBA /* ViewController.swift */,
 				0013EF7F1EE6F75400BE3BBA /* Main.storyboard */,
@@ -271,6 +274,7 @@
 				0013EFAA1EE6F77100BE3BBA /* Tweet.swift in Sources */,
 				0013EF7E1EE6F75400BE3BBA /* ViewController.swift in Sources */,
 				0013EF7C1EE6F75400BE3BBA /* AppDelegate.swift in Sources */,
+				00E109401EF95B54009296F0 /* Token.swift in Sources */,
 				00A1A73E1EE803B500BDBAE2 /* APITwitterDelegate.swift in Sources */,
 				00373A681EEE8BE700E3CAE6 /* APIController.swift in Sources */,
 			);

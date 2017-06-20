@@ -9,6 +9,6 @@
 import Foundation
 
 protocol APITwitterDelegate: class {
-    func GestionTweet(tweet: Tweet)
+    func GestionTweet(tweet: [Tweet])
     func GestionErreur(erreur: NSError)
 }
