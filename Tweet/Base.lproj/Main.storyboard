@@ -29,7 +29,7 @@
                             </navigationBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uEf-m6-lAE">
                                 <rect key="frame" x="0.0" y="32" width="375" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MEu-FD-eaJ">
                                 <rect key="frame" x="0.0" y="76" width="375" height="591"/>
@@ -64,6 +64,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZaI-bT-7wa"/>
                     <connections>
+                        <outlet property="TweetSearchBar" destination="uEf-m6-lAE" id="dG9-gW-onW"/>
                         <outlet property="tableView" destination="MEu-FD-eaJ" id="9EF-9m-WGc"/>
                     </connections>
                 </viewController>

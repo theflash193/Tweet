@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, APITwitterDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, APITwitterDelegate, UISearchBarDelegate {
 
+    @IBOutlet weak var TweetSearchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     var Tweet: [Tweet]?
     var Api: APIController?
@@ -22,7 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         Api = APIController(delegate: self, token: getToken())
 
         Api?.request(search: "42")
-
+        TweetSearchBar.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,5 +61,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func getToken() -> String {
         return "AAAAAAAAAAAAAAAAAAAAAABI0wAAAAAA9l2ehBRlwvi3UvV%2FskqYAJGEJ54%3DVt64NFVngs60EyI6WhhyQeV4qQWoWVFHj7j6dlRyRR410yfjyx"
     }
+    
+    // SearchBar Delegate
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let Text
+            = searchBar.text {
+            Api?.request(search: Text)
+        }
+        searchBar.resignFirstResponder()
+    }
+    
 }
 

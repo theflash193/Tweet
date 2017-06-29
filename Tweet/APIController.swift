@@ -43,14 +43,20 @@ class APIController {
                                         }
                                     }
                                 }
+                                DispatchQueue.main.async {
                                     self.delegate?.GestionTweet(tweet: post)
+                                }
+                                
                             }
                             
 
                         }
                     } catch (let err) {
                         print(err)
+                        DispatchQueue.main.async {
                             self.delegate?.GestionErreur(erreur: err as NSError)
+                        }
+                        
                         
                     }
                 }
